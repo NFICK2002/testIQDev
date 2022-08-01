@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;;
+}
+
+header {
+    width: 100%;
+    height: 44px;
+    background-color: #1F2229;
+    position: relative;
+}
+
+main {
+    margin: 0 auto;
+    width: 800px;
+    height: 700px;
+    background-color: #FAF6F6;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    width: 172px;
+    height: 52px;
+    background-color: #33C4A0;
+    border: 1px solid #33C4A0;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    color: black;
+}
+
+hr {
+    margin: 28px auto 0 auto;
+    color: #0000009C;
+    width: 640px;
+
+}
+
+.my_logo {
+    position: absolute;
+    left: 535px;
+    top: 12px;
+}
+
+.task_name_p {
+    position: absolute;
+    left: 640px;
+    top: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.name_task {
+    padding-top: 41px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #1F2229;;
+}
+
+.p_description {
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1F2229;;
+}
+
+.action_form {
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 798px;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.form_group {
+    position: relative;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 35px;
+}
+
+.form_term {
+    display: flex;
+}
+
+.form_term > input {
+    width: 159px;
+}
+
+.form_term > select {
+    cursor: pointer;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    height: 52px;
+    width: 85px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    border-left: none;
+    background-color: white;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.monthly_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 412px;
+}
+
+.monthly_block > input {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.monthly_block > label {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.label_input {
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 14px;
+    position: absolute;
+    top: 50%;
+    right: 61%;
+    transform: translateY(-85%);
+    transition: all .2s ease-in-out;
+}
+
+.input_form::placeholder {
+    opacity: 0;
+}
+
+.input_form:focus + .label_input {
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+.input_form:not(:placeholder-shown) + .label_input {
+    margin-top: -12px;
+    font-size: 12px;
+}
+
+.airdatepicker {
+    padding: 21px 10px 10px 15px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    height: 52px;
+    width: 242px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.label_term {
+    right: 67%;
+}
+
+.label_amount {
+    right: 63%;
+}
+
+.label_percent {
+    right: 25%;
+}
+
+.label_deposit {
+    right: 34%;
+}
+
+.hide_block_margin {
+    margin-left: 36px;
+    margin-right: 50px;
+}
+
+.hide_block {
+    display: none;
+}
+
+.p_sum {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 26px;
+    margin-left: -550px;
+}
+
+.total_sum {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    margin-left: -380px;
+}
+
+
+#airdatepicker-error,
+#term_input-error,
+#amount_input-error,
+#percent_input-error,
+#deposit-error {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    color: red;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.valid {
+    border: 1px solid rgb(51, 196, 160);
+}
+
+input.error {
+    border: 1px solid red !important;
+}
+
+#money {
+    transition: all 1s ease-in-out;
+}
+
+
+
